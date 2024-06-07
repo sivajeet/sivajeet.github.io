@@ -669,8 +669,9 @@ footer {
 }
 
 #contact {
-	padding: 60px 15px;
-	background: #8d34db;
+	padding-bottom: 60px ;
+	padding-top: 10px;
+	background: #b365f3;
 	text-align: center
 }
 
