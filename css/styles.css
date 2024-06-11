@@ -290,7 +290,7 @@ footer {
     position: absolute;
     top: 0;
     right: 0;
-    width: 75%; /* Adjust this width as needed */
+    width: 100%; /* Adjust this width as needed */
     height: 100%;
     overflow: hidden;
 }
@@ -300,13 +300,19 @@ footer {
     top: 50%;
     left: 50%;
     min-width: 100%;
-    min-height: 100%;
+    min-height: 70%;
     width: auto;
     height: auto;
     transform: translate(-50%, -50%);
     z-index: -1;
 }
 
+@media screen and (min-width: 768px) {
+    .video-container {
+        right: 0;
+        width: 50%; /* Adjust this width as needed */
+    }
+}
 
 
 #lead-content {
