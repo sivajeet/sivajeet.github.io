@@ -1,14 +1,8 @@
 /*!
-    Title: Dev Portfolio Template
-    Version: 1.2.2
-    Last Change: 03/25/2020
-    Author: Ryan Fitzgerald
-    Repo: https://github.com/RyanFitzgerald/devportfolio-template
-    Issues: https://github.com/RyanFitzgerald/devportfolio-template/issues
-
-    Description: This file contains all the styles associated with the page
-    that don't come from third party libraries. This file gets compiled using
-    Gulp and send to the /css folder which is then loaded on the page.
+    Title: Research Portfolio
+    Version: 1
+    Last Change: 13/06/24
+    Author: Sivajeet Chand
 */
 body {
 	font-family: 'Lato', sans-serif;
@@ -180,12 +174,12 @@ footer {
 	width: 35px;
 	height: 35px;
 	border-radius: 50%;
-	border: 3px solid #bfb9c4;
+	border: 3px solid #fffeff;
 	text-align: center
 }
 
 .top i {
-	color: #80748a
+	color: #f7f7f7
 }
 
 .social {
@@ -310,6 +304,34 @@ footer {
 @media screen and (min-width: 768px) {
     .video-container {
         right: 0;
+        width: 50%; /* Adjust this width as needed */
+    }
+}
+
+.video-container1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%; /* Adjust this width as needed */
+    height: 100%;
+    overflow: hidden;
+}
+
+#background-video1 {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    min-width: 100%;
+    min-height: 70%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+@media screen and (min-width: 768px) {
+    .video-container1 {
+        left: 0;
         width: 50%; /* Adjust this width as needed */
     }
 }
@@ -617,9 +639,12 @@ footer {
 #projects {
 	padding: 50px 15px;
 	border-bottom: 1px solid #dcd9d9;
-	text-align: center
+	text-align: center;
 }
 
+#publications1 {
+	text-align: center;
+}
 #projects h2 {
 	color: #433754;
 	margin-bottom: 50px
@@ -643,6 +668,7 @@ footer {
 	top: 50%;
 	transform: translateY(-50%);
 	margin-left: 300px;
+	text-align: left;
 	padding: 15px
 }
 
@@ -657,6 +683,13 @@ footer {
 	color: #80748a;
 	margin: 0 0 15px 0;
 	font-size: 0.9em
+}
+
+.purple-background {
+    background-color: purple;
+    color: white; /* Optional: Makes the text color white for better readability */
+    padding: 5px; /* Optional: Adds some padding around the text */
+    border-radius: 5px; /* Optional: Adds rounded corners */
 }
 
 .no-image .project-info {
