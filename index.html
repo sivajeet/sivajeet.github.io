@@ -81,18 +81,17 @@
 
         <div id="lead-overlay"></div>
 
-        <div id="lead-down">
-            <span>
-                <i class="fa fa-chevron-down" aria-hidden="true"></i>
-            </span>
-        </div>
+        
         <!-- End #lead-down -->
     </div>
     <div class="video-container">
         <video autoplay muted loop id="background-video">
+            <source media="(max-width: 1200px)" srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" >
             <source src="images/video3.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
+    
+    </div>
     
     </div>
     <!-- End #lead -->
@@ -145,7 +144,7 @@
     <!-- End #about -->
 
     <div id="projects" class="background-alt">
-        <h2 class="heading">Publications</h2>
+        <h2 class="heading" id="publications1" style="text-align:center;">Publications</h2>
         <div class="container">
             <div class="row">
                 <div class="project shadow-large">
@@ -158,8 +157,8 @@
                         <p>
                             Sivajeet Chand, Sushant Kumar Pandey, Jennifer Horkoff, Miroslaw Staron, Miroslaw Ochodek, Darko Durisic. Proceedings of the 19th International Conference on Predictive Models and Data Analytics in Software Engineering, Pages 44-48.
                         </p>
-                        <a href="https://dl.acm.org/doi/pdf/10.1145/3617555.3617873" style="color: blueviolet;">[Paper]</a> /
-                        <a href="#" style="color: blueviolet;">[Source Code]</a>
+                        <p><a href="https://conf.researchr.org/home/promise-2023" target="_blank" style="background-color: blueviolet; color: azure; padding: 3px; border-radius: 5px; margin-right: 15px;">PROMISE'23</a><a href="https://dl.acm.org/doi/pdf/10.1145/3617555.3617873" style="color: blueviolet;">[Paper]</a> /
+                        <a href="#" style="color: blueviolet;">[Source Code]</a></p>
                     </div>
                     <!-- End .project-info -->
                 </div>
@@ -175,7 +174,7 @@
                         <p>
                             Sushant Kumar Pandey, Sivajeet Chand, Jennifer Horkoff and Miroslaw Staron. Product-Focused Software Process Improvement - 24th International Conference, {PROFES} 2023, Dornbirn, Austria, December 10-13, 2023.
                         </p>
-                        <a href="https://link.springer.com/chapter/10.1007/978-3-031-49266-2_21" style="color: blueviolet;">[Paper]</a>
+                        <p><a href="https://www.profes-conferences.org/" target="_blank" style="background-color: blueviolet; color: azure; padding: 3px; border-radius: 5px; margin-right: 15px;">PROFES'23</a><a href="https://link.springer.com/chapter/10.1007/978-3-031-49266-2_21" style="color: blueviolet;">[Paper]</a></p>
                     </div>
                     <!-- End .project-info -->
                 </div>
@@ -314,28 +313,12 @@
                 
             </ul>
         </div>
+        
+        
+        
         <!-- End #contact-form -->
     </div>
     <!-- End #contact -->
-
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-5 copyright">
-                    <p>
-                        Copyright &copy; <span id="current-year">2024</span> Sivajeet Chand
-                    </p>
-                </div>
-                <div class="col-sm-2 top">
-                    <span id="to-top">
-                        <i class="fa fa-chevron-up" aria-hidden="true"></i>
-                    </span>
-                </div>
-                
-            </div>
-        </div>
-    </footer>
-    <!-- End footer -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/scripts.min.js"></script>
